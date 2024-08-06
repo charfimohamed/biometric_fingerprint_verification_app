@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ClientApp</string>
+    <string name="form_name">Name</string>
+    <string name="form_village">Village</string>
+    <string name="form_age">Age</string>
+    <string name="form_number_of_children">Number of Children</string>
+    <string name="AddCustomerButton">ADD CUSTOMER</string>
+    <string name="AddCustomerFingerprintButton">add fingerprint</string>
+</resources>

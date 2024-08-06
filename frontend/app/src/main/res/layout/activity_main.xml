@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".customerFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/formTextFieldName"
+            android:hint="@string/form_name"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/formTextFieldVillage"
+            android:hint="@string/form_village"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/formTextFieldAge"
+            android:hint="@string/form_age"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/formTextFieldNumberOfChildren"
+            android:hint="@string/form_number_of_children"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Use a horizontal LinearLayout for the button and ImageView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@id/formAddButton">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/formAddFingerprint"
+                android:layout_width="159dp"
+                android:layout_height="122dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_border"
+                android:text="@string/AddCustomerFingerprintButton"
+                android:textColor="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="127dp"
+                android:layout_height="122dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/formAddButton"
+        android:text="@string/AddCustomerButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>
