@@ -7,7 +7,8 @@ This project implements a biometric fingerprint verification system with a backe
 
 This app is specifically designed and tested to function with the **MorphoTablet 2**:
 
-[MorphoTablet.png] 
+![MorphoTablet](MorphoTablet.png)
+
 
 ## Getting Started
 
